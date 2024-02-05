@@ -1,0 +1,71 @@
+@import "../styles/base/globals.scss";
+@import "../styles/base/mixins.scss";
+
+.homeMenu{
+    @include menu-style;
+
+    &.active{
+        right: 0;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-weight: 400;
+        color: $mainColor;
+        width: 60%;
+        text-align: center;
+
+        li{
+            margin-bottom: 20px;
+            padding: 5px;
+            a{
+                font-size: inherit;
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &:hover{
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 936px) {
+    .homeMenu{
+        max-width: 400px;
+        height: 65px;
+        background-color: white;
+        padding: 0px 10px;
+        top: 0;
+        right: 350px;
+        flex-direction: row;
+        gap: 10px;
+        z-index: 5;
+        transition: none;
+
+        ul{
+            width: 100%;
+            font-size: 17px;
+            font-weight: 600;
+            color: $mainColor;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+
+            li{
+                margin: 0;
+
+                &:hover{
+                    font-weight: 400;
+                    text-decoration: underline;
+                }
+            }
+        }
+    } 
+}
