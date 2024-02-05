@@ -20,10 +20,7 @@ app.use('/api', itemRoutes);
 app.use('/api', cartRoutes);
 app.use('/api', orderRoutes);
 
-app.use(express.static('front_end/public'));
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname,'front_end','public','index.html'));
-});
+
 
 //production environment
 if(process.env.NODE_ENV === 'production') {
