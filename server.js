@@ -33,7 +33,7 @@ res.sendFile(path.resolve(__dirname,'client','build','index.html'));
 
 //MongoDB connection
 const PORT = process.env.PORT || 3000;
-const dbURI = 'mongodb://127.0.0.1:27017/progress-DB';
+const dbURI = 'mongodb://localhost:27017/';
 
 /*mongoose.connect('mongodb://127.0.0.1:27017/progress-DB')
 .then(() => console.log('Database connected successfully'))
@@ -51,4 +51,4 @@ mongoose
   )
   .catch(err => console.log(err)); 
 
-  mongoose.set('strictQuery', true);
+
