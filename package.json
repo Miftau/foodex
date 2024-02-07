@@ -23,7 +23,6 @@
     "mongoose": "^6.7.3",
     "node-fetch": "^2.6.7",
     "razorpay": "^0.0.0",
-    "validator": "^13.7.0",
-    "webpack-dev-server": "^4.15.1"
+    "validator": "^13.7.0"
   }
 }
