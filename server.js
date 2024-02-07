@@ -33,9 +33,9 @@ res.sendFile(path.resolve(__dirname,'front_end','public','index.html'));
 
 //MongoDB connection
 const PORT = process.env.PORT || 10000;
-const dbURI = 'mongodb://127.0.0.1:27017/progress-DB';
+const dbURI = 'mongodb+srv://foodex:Edtnbv4PGwawOC3o@cluster0.0be1vld.mongodb.net/';
 
-mongoose.connect('mongodb://127.0.0.1:27017/progress-DB')
+mongoose.connect('mongodb+srv://foodex:Edtnbv4PGwawOC3o@cluster0.0be1vld.mongodb.net/')
 .then(() => console.log('Database connected successfully'))
 .catch(err => console.log(err.message))
 
