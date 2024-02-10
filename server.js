@@ -30,6 +30,11 @@ res.sendFile(path.resolve(__dirname,'front_end','public','index.html'));
     });
 }
 
+app.use(cors({
+  origin: 'https://food-ex-nu.vercel.app/',
+  credentials: true
+}))
+
 
 //MongoDB connection
 const PORT = process.env.PORT || 3000;
