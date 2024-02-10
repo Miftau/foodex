@@ -32,7 +32,7 @@ res.sendFile(path.resolve(__dirname,'front_end','public','index.html'));
 
 
 //MongoDB connection
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 3000;
 const dbURI = 'mongodb+srv://foodex:Edtnbv4PGwawOC3o@cluster0.0be1vld.mongodb.net/';
 
 mongoose.connect('mongodb+srv://foodex:Edtnbv4PGwawOC3o@cluster0.0be1vld.mongodb.net/')
