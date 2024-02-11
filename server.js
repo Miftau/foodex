@@ -24,9 +24,9 @@ app.use('/api', orderRoutes);
 
 //production environment
 if(process.env.NODE_ENV === 'production') {
-    app.use(express.static('front_end'));
+    app.use(express.static('static/build'));
     app.get('*', (req, res) => {
-res.sendFile(path.resolve(__dirname,'front_end','public','index.html'));
+res.sendFile(path.resolve(__dirname,'build','public','index.html'));
     });
 }
 
