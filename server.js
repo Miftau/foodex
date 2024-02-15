@@ -30,10 +30,10 @@ res.sendFile(path.resolve(__dirname,'build','public','index.html'));
     });
 }
 
-app.use(cors({
+/*app.use(cors({
   origin: 'https://food-ex-nu.vercel.app/',
   credentials: true
-}))
+}))*/
 
 const allowCors = fn => async (req, res) => {
   res.setHeader('Access-Control-Allow-Credentials', true)
@@ -58,7 +58,6 @@ const handler = (req, res) => {
 }
 
 module.exports = allowCors(handler)
-
 
 //MongoDB connection
 const PORT = process.env.PORT || 3000;
