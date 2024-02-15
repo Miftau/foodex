@@ -14,7 +14,7 @@ const app = express();
 
 app.use(helmet());
 app.use(express.json());
-app.use(cors());
+//app.use(cors());
 app.use('/api', authRoutes);
 app.use('/api', itemRoutes);
 app.use('/api', cartRoutes);
